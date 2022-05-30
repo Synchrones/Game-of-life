@@ -602,7 +602,8 @@ while not quitter:
             vecteur_unitaire = (vecteur_souris_centre[0] / longueur_vecteur, vecteur_souris_centre[1] / longueur_vecteur)
             curseur_cercle_chromatique_rect.center = (cercle_chromatique_rect.center[0] + vecteur_unitaire[0] * 50, cercle_chromatique_rect.center[1] + vecteur_unitaire[1] * 50)
             angle = math.degrees(math.atan2(-vecteur_unitaire[1], -vecteur_unitaire[0])) + 180
-            couleur_cellules = tuple(round(i * 255) for i in colorsys.hsv_to_rgb(angle / 360, 1, 1))
+            couleur_cellules = tuple(round(i * 255) for i in colorsys.hsv_to_rgb(angle / 360, colorsys.rgb_to_hsv(*couleur_cellules)[1], 1))
+
 
             # met à jour la barre de saturation
             for i in range(longueur_barres):
