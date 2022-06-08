@@ -3,8 +3,8 @@
 
 ### ⚠ The code of this project and the UIs have been written in french! 
 
-Two versions of this are availiable : 
-  -A command line version (very limited)
+Two versions of this are availiable :  
+  -A command line version (very limited)  
   -A graphic version with extended features (requires the pygame module)
 
 Image of the graphic version :
