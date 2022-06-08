@@ -8,4 +8,4 @@ Two versions of this are availiable :
   -A graphic version with extended features (requires the pygame module)
 
 Image of the graphic version :
-![image](https://user-images.githubusercontent.com/59451933/169663986-0a13338b-6e8f-4d47-8ebf-4210dc193466.png)
+![gof](https://user-images.githubusercontent.com/59451933/172580278-d26de647-6cf3-41a9-bb48-0d00e26371e0.png)
