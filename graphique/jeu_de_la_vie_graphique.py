@@ -540,7 +540,7 @@ while not quitter:
         ecran.blit(surf_text_titre, surf_text_titre.get_rect(midleft=(infos_fenetre.current_w / 2, 20)))
         surf_text_general = police_options.render("Général :", True, "White")
         ecran.blit(surf_text_general, surf_text_general.get_rect(midleft=(80, infos_fenetre.current_h / 20 * 2)))
-        texte_general = "-La zone centrale possède la grille de jeu où les cellules peuvent être placées, pour placer une cellule, faites un clique gauche sur une case ou laissez appuyer et glissez pour en placer sur toutes les cases survolées. Pour la retirer, cliquez à nouveau dessus||-Pour vous déplacer sur la grille, laissez appuyé le clique droit et déplacez la souris|-Pour lancer l'évolution des cellules, cliquez le bouton à gauche de la grille|-Le bouton 'réinitialiser' permet de supprimer toutes les cellules de la grille"
+        texte_general = "-La zone centrale possède la grille de jeu où les cellules peuvent être placées, pour placer une cellule, faites un clique gauche sur une case ou laissez appuyé et glissez pour en placer sur toutes les cases survolées. Pour la retirer, cliquez à nouveau dessus||-Pour vous déplacer sur la grille, laissez appuyé le clique droit et déplacez la souris|-Pour lancer l'évolution des cellules, cliquez le bouton à gauche de la grille|-Le bouton 'réinitialiser' permet de supprimer toutes les cellules de la grille"
         pos_suivante = rendu_plusieurs_lignes(texte_general, (30, infos_fenetre.current_h / 20 * 3))
       
         surf_texte_options = police_options.render("Options :", True, "White")
