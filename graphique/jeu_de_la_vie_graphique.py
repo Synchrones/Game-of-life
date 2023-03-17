@@ -459,8 +459,8 @@ def change_case():
                     indices = coords_vers_indices(x, y)
                     if not coords[indices[0]][indices[1]][indices[2]]["traitee"]:
                         # probabilite_placement:
-                        prob_max = int(100 / max(1, min(100, probabilite_placement)))
-                        if random.randint(1, prob_max) == 1:
+                        prob_max = max(1, min(100, probabilite_placement))
+                        if random.randint(1, 100) < prob_max:
                             if coords[indices[0]][indices[1]][indices[2]]["valeur"]:
                                 coords[indices[0]][indices[1]][indices[2]]["valeur"] = False
                                 cellules_vivantes.remove((x, y))
